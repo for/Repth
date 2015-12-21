@@ -1,0 +1,265 @@
+<!doctype html>
+<html lang=en>
+<head>
+<title>Repth</title>
+<link href="normalize.css" rel="stylesheet" type="text/css"/>
+<script src="//code.jquery.com/jquery-1.11.3.min.js"></script>
+<!--<link href='http://fonts.googleapis.com/css?family=Amaranth:400,700' rel='stylesheet' type='text/css'>-->
+<script>
+	  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+	  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+	  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+	  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+	  ga('create', 'UA-40313012-1', 'auto');
+	  ga('send', 'pageview');
+
+</script>
+<style>
+h1, h2, h3, h4, a { color: #636; font-family: 'Amaranth', sans-serif;}
+body { 
+	color: #555; 
+	font-family: "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;
+	background: url(images/bg.jpg) #000 no-repeat center center fixed; 
+	-webkit-background-size: cover;
+  background-size: cover;	
+}
+
+.moveAble {
+    position: absolute;
+}
+
+video{
+	position:fixed;
+	left:0;top:0;
+	min-width:100%;
+	min-height:100%;
+	width:auto;
+	height:auto;
+	z-index:-100;
+	visibility: visible;
+}
+#logo{
+	width: 320px; height: 320px;
+	margin: 80px auto;
+	padding: 20px;
+	text-align: center;
+	border-radius: 50%;
+	background: url(images/dot.png);	
+}
+#lbg{
+overflow: hidden; <!--Set so as to remove top margin-->
+width: 100%; height: 100%;
+background: url(images/dot.png);
+margin: 0 !important;
+padding: 0 !important;	
+}
+
+#lbg2{
+overflow: hidden; <!--Set so as to remove top margin-->
+width: 100%; height: 100%;
+background: url(images/hd.jpg);
+margin: 0 !important;
+padding: 0 !important;	
+}
+
+#vCent{
+	display: table; 
+	height: 320px; width: 320px; 
+	overflow: hidden;	
+}
+#vCent h1{
+	font-family: 'Amaranth', sans-serif;	
+	display: table-cell; vertical-align: middle;
+	font-size:5em;
+	letter-spacing:.02em;
+	line-height: .8em;
+	color: #636;
+}
+.strapline{
+	padding: 20px 0;
+	color: #fff;	
+	font-size: 2.5em;
+	font-family: 'Amaranth', sans-serif;
+}
+.x_bg{ background: url(images/dot.png);}
+.cntr{
+	margin: 0 auto;
+	width: 95%;
+	max-width: 960px;
+	line-height: 1.6em;	
+}
+.lines{
+	border-top: 2px solid #fff;
+	border-bottom: 2px solid #fff;	
+	padding-bottom: 10px;
+}
+.white{
+	background: #fff;
+	padding: 40px 0;	
+}
+a{
+	display: inline-block;
+	color: #fff;
+	text-decoration: none;
+	background: #636;
+	padding:.5rem;
+	transition:.3s background;
+}
+a:hover{
+	background:#303;
+}
+hr {
+	height:1px; 
+	background-color:#ddd; 
+	border:none;	
+}
+.third{
+	float: left;
+	width: 30%;
+	padding: 0 1.5%;	
+}
+.clearfix{ clear: both; }
+.spacer { min-height: 240px; }
+.dark_bg { background:rgba(0,0,0,0.5); }
+.smll { font-size: 0.8em; 
+	color: rgba(255,255,255,0.5);
+}
+.respond {
+	max-width: 100%;	
+}
+.small_spacer { min-height: 120px; }
+.thin_bg{ 
+	background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,rgba(55,55,55,0.9)), color-stop(80%,rgba(55,55,55,0)),color-stop(100%,rgba(55,55,55,0.3))), url(images/thin_stripe.png);
+}
+.about-img{
+	max-width: 360px;
+	display: block;
+	float: right;
+}
+.dark2_bg {
+	background: -webkit-gradient(linear, left top, left bottom, color-stop(20%,rgba(45,45,45,0)), color-stop(100%,rgba(45,45,45,0.8))), url(images/dot.png);;
+}
+.dark{
+	background: #222;
+	padding: 40px 0;
+}
+.dark p, .dark h2{
+	color: #999;	
+}
+@media screen and (max-width: 768px) {
+	video{ visibility:hidden;}
+	#logo{width: 200px; height: 200px; margin: 30px auto;}
+	#vCent{width: 200px; height: 200px;}
+	#vCent h1{font-size:3em;}
+	.strapline{font-size:2em;}
+}
+.xbox{
+	color: green;
+	
+}
+
+</style>
+</head>
+<body>
+<video autoplay loop>
+    <source src="loop2.mp4" type="video/mp4">
+    <source src="loop.webm" type="video/webm">
+    <source src="loop.ogv" type="video/ogg">
+</video>
+
+<header>
+
+
+<div id="lbg">
+	<div id="logo">
+        <div id="vCent">
+            <h1>Repth</h1>
+        </div>
+    </div>
+    <div class="<!--x_bg-->">
+        <div class="cntr strapline">
+            <p class="lines">Your Future Is Created By What You Do Today Not Tomorrow</p>
+        </div>
+    </div>
+	</div>
+	
+	
+</header>
+	</div>
+</div>
+<div id="page">
+    <!--<div class="white">
+        <div class="cntr">
+            <h2>Epic</h2>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur porta dictum turpis</a></p>
+            <hr>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur porta dictum turpis, eu mollis justo gravida ac. Proin non eros blandit, rutrum est a, cursus quam. Nam ultricies, velit ac suscipit vehicula, turpis eros sollicitudin lacus, at convallis mauris magna non justo. Etiam et suscipit elit. Morbi eu ornare nulla, sit amet ornare est. Sed vehicula ipsum a mattis dapibus. Etiam volutpat vel enim at auctor.</p>
+          
+        	<hr>
+            <div class="third">
+            <h3>Awesome</h3>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur porta dictum turpis, eu mollis justo gravida ac. Proin non eros blandit.</p>
+            </div>
+            <div class="third">
+            <h3>Super</h3>
+            <p>Rutrum est a, cursus quam. Nam ultricies, velit ac suscipit vehicula, turpis eros sollicitudin lacus, at convallis mauris magna non justo.</p>
+            </div>
+            <div class="third">
+            <h3>Cool</h3>
+            <p>Etiam et suscipit elit. Morbi eu ornare nulla, sit amet ornare est. Sed vehicula ipsum a mattis dapibus. Etiam volutpat vel enim at auctor.</p>
+            </div>
+            <div class="clearfix"></div>
+    	</div>
+	</div>
+	<div class="spacer"></div>-->
+    <div class="white">
+        <div class="cntr">
+        	<h2>About me</h2>
+            <hr>
+            <img class="about-img" src="images/screens.png">
+        	<p>I am a web developer working with HTML,CSS,JS,PHP,VB.Net and starting C# in the new future</p>
+            <p>Im my free time I hang out with mates and game on the PC and XBOX One.</p>
+			<p>My gamertag is: <span class="xbox"><a href="http://live.xbox.com/Profile?Gamertag=Omnisec">Omnisec</a></span></p>
+            <div class="clearfix"></div>
+        </div>
+   </div>
+   <div class="spacer dark_bg">
+   		<div class="cntr strapline">
+            <p> &ldquo;Never trust a computer you can't throw out a window; <br><span class="smll">- Steve Wozniak</span></p>
+        </div>
+   </div>
+   <div class="white">
+        <div class="cntr">
+        	<h2>Projects</h2>
+            <hr>
+        	<div class="third">
+            <a href="https://repth.com/xboxclips/"><img class="respond" src="images/Screenshot_4.png"></a>
+            <h3>XBOX Game Clips</h3>
+            <p>A Pet php project for retreiving XBOX One game clips and desplayingthem for users.</p>
+            </div>
+            <div class="third">
+            <a href="https://repth.com/paste/"><img class="respond" src="images/UksAJn1.jpg"></a>
+            <h3>Encrypted Pastebin</h3>
+            <p>Php project that encrypts text with verious encryption methods and desplays them by link.</p>
+            </div>
+            <div class="third">
+            <img class="respond" src="images/nstart.png">
+            <h3>Not Started</h3>
+            <p>Placeholder for a third project.</p>
+            </div>
+            <div class="clearfix"></div>
+        </div>
+   </div>
+   <div class="spacer dark2_bg"></div>
+   <div class="dark">
+        <footer class="cntr">
+        	<h2>Copyright</h2>
+            <hr>
+            
+        	<p>Social Accounts - - -</p>
+        </footer>
+   </div>
+</div>
+</body>
+</html>
